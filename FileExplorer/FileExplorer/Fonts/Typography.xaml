@@ -1,0 +1,240 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <!--#region Families-->
+    <FontFamily x:Key="Regular">Fonts/Roboto-Regular.ttf#Roboto Regular</FontFamily>
+    <FontFamily x:Key="Bold">Fonts/Roboto-Bold.ttf#Roboto Bold</FontFamily>
+    <FontFamily x:Key="Light">Fonts/Roboto-Light.ttf#Roboto Light</FontFamily>
+    <FontFamily x:Key="Medium">Fonts/Roboto-Medium.ttf#Roboto Medium</FontFamily>
+    <FontFamily x:Key="Italic">Fonts/Roboto-Italic.ttf#Roboto Italic</FontFamily>
+    <FontFamily x:Key="MonoItalic">Fonts/RobotoMono-Italic-VariableFont_wght.ttf#Roboto Mono Italic Variable</FontFamily>
+    <FontFamily x:Key="Mono">Fonts/RobotoMono-VariableFont_wght.ttf#Roboto Mono Variable</FontFamily>
+    <!--#endregion-->
+    <!--#region Font Size-->
+    <system:Double x:Key="Font_Text_Small">15</system:Double>
+    <system:Double x:Key="Font_Text_Small_Medium">15</system:Double>
+    <system:Double x:Key="Font_Link_Text">18</system:Double>
+    <system:Double x:Key="Font_Button_Text_Clicked_Active">18</system:Double>
+    <system:Double x:Key="Font_Button_Text_Default">18</system:Double>
+    <system:Double x:Key="Font_Body_Text_Bold">18</system:Double>
+    <system:Double x:Key="Font_Body_Text">18</system:Double>
+    <system:Double x:Key="Font_Mono_Body_Text">18</system:Double>
+    <system:Double x:Key="Font_Subtitle">18</system:Double>
+    <system:Double x:Key="Font_Mono_Subtitle">18</system:Double>
+    <system:Double x:Key="Font_H3_Header_Medium">20</system:Double>
+    <system:Double x:Key="Font_Text_Large_Bold">20</system:Double>
+    <system:Double x:Key="Font_Text_Large">20</system:Double>
+    <system:Double x:Key="Font_H2_Header_Bold">20</system:Double>
+    <system:Double x:Key="Font_H1_Header_Bold">25</system:Double>
+    <!--#endregion-->
+    <!--#region Line Height-->
+    <system:Double x:Key="LineHeight_H1_Header_Bold">30</system:Double>
+    <system:Double x:Key="LineHeight_H2_Header_Bold">24</system:Double>
+    <system:Double x:Key="LineHeight_H3_Header_Medium">24</system:Double>
+    <system:Double x:Key="LineHeight_Subtitle">20</system:Double>
+    <system:Double x:Key="LineHeight_Mono_Subtitle">20</system:Double>
+    <system:Double x:Key="LineHeight_Body_Text">26</system:Double>
+    <system:Double x:Key="LineHeight_Mono_Body_Text">26</system:Double>
+    <system:Double x:Key="LineHeight_Body_Text_Bold">24</system:Double>
+    <system:Double x:Key="LineHeight_Text_Large">26</system:Double>
+    <system:Double x:Key="LineHeight_Text_Large_Bold">26</system:Double>
+    <system:Double x:Key="LineHeight_Text_Small">20</system:Double>
+    <system:Double x:Key="LineHeight_Text_Small_Medium">20</system:Double>
+    <system:Double x:Key="LineHeight_Button_Text_Default">20</system:Double>
+    <system:Double x:Key="LineHeight_Button_Text_Clicked_Active">20</system:Double>
+    <system:Double x:Key="LineHeight_Link_Text">26</system:Double>
+    <!--#endregion-->
+    <!--#region Styles-->
+    <Style x:Key="H1.Header.Bold"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_H1_Header_Bold}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_H1_Header_Bold}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="H2.Header.Bold"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_H2_Header_Bold}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_H2_Header_Bold}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="H3.Header.Medium"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_H3_Header_Medium}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Medium}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_H3_Header_Medium}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Subtitle"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Subtitle}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Subtitle}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Body.Text"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Body_Text}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Medium}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Body_Text}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Body.Text.Bold"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Body_Text_Bold}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Body_Text_Bold}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Mono.Subtitle"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Mono_Subtitle}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Mono}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Mono_Subtitle}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Body.Text.Mono"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Mono_Body_Text}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Mono}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Mono_Body_Text}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Text.Large"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Text_Large}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Regular}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Text_Large}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Text.Large.Bold"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Text_Large_Bold}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Text_Large_Bold}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Text.Small"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Text_Small}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Regular}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Text_Small}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Text.Small.Medium"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Text_Small_Medium}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Medium}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Text_Small_Medium}" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Text.Small.Medium.For.Label.Styles"
+           TargetType="{x:Type TextBlock}"
+           BasedOn="{StaticResource Text.Small.Medium}">
+        <Setter Property="Margin"
+                Value="5" />
+        <Setter Property="Visibility"
+                Value="Visible" />
+        <Style.Triggers>
+            <Trigger Property="Text"
+                     Value="{x:Null}">
+                <Setter Property="Visibility"
+                        Value="Collapsed" />
+            </Trigger>
+            <Trigger Property="Text"
+                     Value="">
+                <Setter Property="Visibility"
+                        Value="Collapsed" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="Button.Text.Default"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Button_Text_Default}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Medium}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Button_Text_Default}" />
+        <Setter Property="TextAlignment"
+                Value="Center" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Button.Text.Clicked.Active"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Button_Text_Clicked_Active}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Bold}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Button_Text_Clicked_Active}" />
+        <Setter Property="TextAlignment"
+                Value="Center" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <Style x:Key="Link.Text"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize"
+                Value="{StaticResource Font_Link_Text}" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource Medium}" />
+        <Setter Property="LineHeight"
+                Value="{StaticResource LineHeight_Link_Text}" />
+        <Setter Property="TextDecorations"
+                Value="Underline" />
+        <Setter Property="LineStackingStrategy"
+                Value="BlockLineHeight" />
+    </Style>
+    <!--#endregion-->
+</ResourceDictionary>
